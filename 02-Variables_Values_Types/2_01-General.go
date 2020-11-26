@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func mainX1() {
 
 	//numberBytes, errors := fmt.Println("Hello World - GoLang")
 	_, errors := fmt.Println("Golang RLSP")

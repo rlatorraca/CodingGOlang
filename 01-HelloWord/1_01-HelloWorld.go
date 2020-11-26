@@ -5,6 +5,6 @@ import (
 	"fmt"
 )
 
-func main() {
+func mainX0() {
 	fmt.Println("Hello World - GoLang")
 }

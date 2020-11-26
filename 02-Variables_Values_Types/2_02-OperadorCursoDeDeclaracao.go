@@ -1,12 +1,13 @@
 //This a simples example Hello World
 package main
+
 import (
 	"fmt"
 )
 
 var texto = "Tem package level scope"
 
-func main() {
+func mainX2() {
 
 	/* := é chamado de Operador Curto de Declaracao, que parece uma MARMOTA (Gopher)
 	    = So funciona dentro do Bloco de codigo (nao pode ser "package level scope")
