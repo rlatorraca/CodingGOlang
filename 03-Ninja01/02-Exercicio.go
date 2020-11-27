@@ -11,10 +11,10 @@ import "fmt"
     2. O compilador atribuiu valores para essas variáveis. Como esses valores se chamam?
  */
 
-var x int
-var y string
-var z bool
+var x1 int
+var y1 string
+var z1 bool
 
 func main() {
-	fmt.Printf("%v\n%v\n%v\n", x, y, z)
+	fmt.Printf("%v\n%v\n%v\n", x1, y1, z1)
 }
