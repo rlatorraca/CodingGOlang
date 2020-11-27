@@ -4,15 +4,16 @@ import (
 	"fmt"
 )
 
-var novotexto = "Tem package level scope"
+var novotexto string = "Tem package level scope"
+var xx int8 = 10
 
-func main() {
+func mainX4() {
 	fmt.Printf("texto : %v, %T\n", textinho, textinho)
-	x:= 10 //integer
-	qualquerCoisa2(x, textinho)
+	fmt.Printf("x : %v, %T\n", xx, xx)
+	qualquerCoisa2(xx, textinho)
 }
 
-func qualquerCoisa2 (x int, y string){
-	fmt.Printf("Foi passado por parâmetro : %v + %v", x, y)
+func qualquerCoisa2 (xx int8, y string){
+	fmt.Printf("Foi passado por parâmetro : %v + %v", xx, y)
 
 }
