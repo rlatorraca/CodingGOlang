@@ -28,4 +28,8 @@ func main() {
 	fmt.Println(segundoslice)
 
 	fmt.Println(primeiroslice)
+
+
 }
+
+

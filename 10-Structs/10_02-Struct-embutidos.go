@@ -23,6 +23,7 @@ type personProfissional struct {
 }
 
 func main() {
+	// Structs Explicitos
 	person1 := person{
 		name:      "João",
 		surname:  "da Silva",
@@ -39,8 +40,14 @@ func main() {
 		salary: 18000,
 	}
 
+	// Structs Implicitos
+	person3 := person{"Martinha", "Bitencourt", 12}
+	person4 := personProfissional{person{"Marcos Paulo", "Primeiro", 64}, "Primerio Secretario da Camara dos Deputados", 234234}
 
 	fmt.Println(person1)
 	fmt.Println(person2)
+	fmt.Println(person3)
+	fmt.Println(person4)
+	fmt.Println(person4.name)
 
 }
