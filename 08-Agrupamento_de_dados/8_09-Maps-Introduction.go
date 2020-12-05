@@ -29,6 +29,7 @@ func main() {
 	fmt.Println(friends)
 	fmt.Println(friends["joana"])
 
+	//Adicionando um objeto
 	friends["marquinho"] = 2342342
 
 	fmt.Println(friends)
