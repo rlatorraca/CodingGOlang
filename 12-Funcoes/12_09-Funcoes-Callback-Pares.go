@@ -1,5 +1,12 @@
 package main
 
+/*
+- Callback é passar uma função como argumento.
+- Exemplo:
+    - Criando uma função que toma uma função e um []int, e usa somente os números pares como argumentos para a função.
+    - Go Playground:
+- Desafio: Crie uma função no programa acima que utilize somente os números *ímpares.*
+ */
 import "fmt"
 
 func main(){
@@ -10,7 +17,7 @@ func main(){
 func pegaSomentOsNumerosPares(funcaoPassada func(x ...int) int, ints ...int) interface{} {
 	var sliceTemp []int
 	for _, v := range ints {
-		if v%2 == 0 {
+		if v % 2 == 0 {
 			sliceTemp = append(sliceTemp, v)
 		}
 	}
