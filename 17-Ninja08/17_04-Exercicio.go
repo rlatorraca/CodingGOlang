@@ -15,14 +15,10 @@ func main() {
 	xs := []string{"random", "rainbow", "delights", "in", "torpedo", "summers", "under", "gallantry", "fragmented", "moons", "across", "magenta"}
 
 	fmt.Println(xi)
-
 	sort.Ints(xi)
-
 	fmt.Println(xi)
 
 	fmt.Println(xs)
-
 	sort.Strings(xs)
-
 	fmt.Println(xs)
 }
