@@ -1,0 +1,31 @@
+package main
+/*
+- go version => version GO instalada
+- go env => variaveis do sistema relacionadas ao GO
+- go help => help da Linguagem GO
+- go fmt
+    - ./…
+- go run
+    - go run [file name]
+    - go run *.go  => pra rodar todoas arquivos da pasta ao mesmo tempo
+- go build
+    - para um executável:  => possui uma funcao MAIN()
+        - gera o arquivo binário
+        - informa caso tenham havido erros
+        - caso não hajam erros, cria um executável e salva-o no diretório atual
+    - para um pacote:
+        - gera o arquivo
+        - informa caso tenham havido erros
+        - descarta o executável
+- go install
+    - para um executável:
+        - faz o build
+        - nomeia o arquivo com o nome do diretório atual
+        - salva o arquivo binário em $GOPATH/bin
+    - para um pacote:
+        - faz o build
+        - salva o arquivo binário em $GOPATH/pkg
+        - cria archive files (arquivo.a), os arquivos pré-compilados utilizados pelos imports
+- flags
+    - "-race"
+ */
