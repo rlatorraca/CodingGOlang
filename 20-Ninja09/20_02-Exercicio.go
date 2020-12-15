@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /*
 - Esse exercício vai reforçar seus conhecimentos sobre conjuntos de métodos.
     - Crie um tipo para um struct chamado "pessoa"
@@ -12,3 +14,32 @@ package main
 - Se precisar de dicas, veja: https://gobyexample.com/interfaces
 - Solução: https://github.com/ellenkorbes/aprend...
  */
+type pessoa struct {
+	nome  string
+	idade int
+}
+
+func (p *pessoa) falar() {
+	fmt.Println(p.nome, "diz oi!")
+}
+
+type humanos interface {
+	falar()
+}
+
+func dizerAlgumaCoisa(h humanos) {
+	h.falar()
+}
+
+func main() {
+
+	p1 := pessoa{"Genghis Khan", 1000}
+
+	p1.falar() // ← É um shortcut pra (&p1).falar()
+
+	(&p1).falar() // ← É a maneira "mais correta."
+
+	dizerAlgumaCoisa(&p1) // ← Funciona!
+
+	// dizerAlgumaCoisa(p1) // ← Não funciona!
+}
