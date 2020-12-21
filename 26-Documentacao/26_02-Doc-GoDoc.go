@@ -1,4 +1,4 @@
-package _6_Documentacao
+package main
 
 /*
 - Antes de escrever documentação, vamos ver como lê-la. Temos algumas possibilidades:
